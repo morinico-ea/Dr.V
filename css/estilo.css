@@ -1,0 +1,1243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#bd{
+    background-color: rgb(50, 60, 90);
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------- */
+
+#cabeza{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+    padding: 0px;
+    margin: 0;
+}
+#cabeza .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+}
+#cabeza>div{
+    width: 100%;
+    height: 70%;
+    margin: 0;
+    display: flex;
+    padding: 2%;
+    box-sizing: border-box;
+}
+#cabeza>div>div{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 1%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    text-align: left;
+}
+
+#cabeza .foto{
+    width: 50%;
+    height: 100%;
+    padding: 2%;
+    margin: 0;
+}
+#cabeza img{
+    width: 90%;
+    height: 75%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgb(30,30,30, 0.5);
+    border-radius: 15px;
+}
+#cabeza h1{
+    width: 100%;
+    height: auto;
+    font-size: 1.5em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(253,253,253);
+    text-align: left;
+    padding: 1%;
+    margin: 0;
+}
+/* --------- barra de navegacion --------- */
+
+#cabeza .barra-nav{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 1% 2%;
+    justify-content:center;
+}
+
+.barra-nav>a{
+    width: 25%;
+    height: max-content;
+    text-decoration: none;
+    font-family:'Arial Narrow', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin: auto;
+    padding: 2px;
+    border: 2px solid rgb(245,245,245, 0.7);
+    border-radius: 50px;
+    color: rgb(250,250,250);
+    box-sizing: content-box;
+    text-align: center;
+}
+
+.barra-nav>a:hover{
+    background-color: rgb(245,245,245, 0.5);
+    translate: 1seg;
+}
+
+/* -------- Fin del header -------- */
+/* ------ seccion acerca de ------ */
+#info{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0 1px;
+}
+#info .acercade{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 0 15% 0;
+    padding: 15% 1%;
+}
+.acercade h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: rgb(249,249,249, 0.9);
+    margin: 8% 4%;
+}
+.acercade>p{
+    color: rgb(249,249,249, 0.9);
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 1%;
+    text-align: center;
+}
+/* -------------- Fin de la seccion -------------- */
+
+
+/* -------------- Seccion servicios -------------- */
+#servicio{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 1%;
+    margin: 0;
+    background-image: linear-gradient(
+        0deg,
+        rgba(10,10,10, 0.5),
+        rgba(10,10,10, 0.5)
+    )
+    ,url(../img/carta-fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#servicio>h2{
+    color: rgb(250,250,250);
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 3% auto;
+    padding: 6px;
+    width: max-content;
+}
+
+.carta{
+    width: 80%;
+    height: 30vh;
+    margin: 8% auto;
+    padding: 6px;
+    border-radius: 10px;
+    overflow:auto;
+    box-shadow: 2px -2px 3px 5px rgba(55, 55, 55, 0.5), -2px 2px 3px 5px rgba(55,55,55, 0.5);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    justify-items: left;
+}
+
+.carta h2{
+    width: max-content;
+    margin: 1% auto;
+    color: rgb(245,245,245);
+    font-family: 'Courier New', Courier, monospace sans-serif;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 4% auto;
+    padding: 1%;
+}
+.carta ul{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.carta li{
+    color: rgb(245,245,245);
+    font-family: 'Courier New', Courier, monospace sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 2% auto;
+    padding: 1%;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.laboral{
+    background-image: linear-gradient(
+        0deg,
+        rgba(10,10,10, 0.5),
+        rgba(10,10,10, 0.5)
+    )
+    ,url(../img/laboral.jpeg);
+    background-position: top center;
+    background-size: cover;
+}
+.familia{
+    background-image: linear-gradient(
+        0deg,
+        rgba(10,10,10, 0.5),
+        rgba(10,10,10, 0.5)
+    )
+    ,url(../img/familia.jpeg);
+    background-position: top center;
+    background-size: cover;
+}
+.penal{
+    background-image: linear-gradient(
+        0deg,
+        rgba(10,10,10, 0.5),
+        rgba(10,10,10, 0.5)
+    )
+    ,url(../img/penal.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+.civil{
+    background-image: linear-gradient(
+        0deg,
+        rgba(10,10,10, 0.5),
+        rgba(10,10,10, 0.5)
+    )
+    ,url(../img/civil.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+/* -------------- Fin de la seccion -------------- */
+
+
+/* -------------- Seccion de contactar -------------- */
+
+#contactar{
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(50, 60, 90);
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#contactar .wave-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
+
+#contactar .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+}
+#contactar form{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#contactar article{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+#contactar h2{
+    color: rgb(250,250,250);
+    font-family:'Gill Sans', 'Calibri', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 2% auto;
+    padding: 2px;
+    width: max-content;
+    height: max-content;
+    text-align: center;
+}
+#contactar .contenedor-inp{
+    position: relative;
+}
+#contactar .contenedor-inp input{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 0;
+    border: 2px solid #fff;
+    color: rgba(255,255,255);
+    text-align: center;
+}
+#contactar .contenedor-inp input::placeholder{
+    color: rgb(50,50,50, 0.7);
+}
+
+#contactar .text-area textarea{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 0;
+}
+.txt-area{
+    overflow: auto;
+    resize:none;
+}
+
+/* -------------- Fin de servicios -------------- */
+
+/* -------------- Seccion ubicacion -------------- */
+
+#ubicacion{
+    width: 100vw;
+    height: 60vh;
+    margin: 0;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(33, 39, 59);
+    color: rgb(240,240,240);
+    position: static;
+}
+
+#ubicacion h3{
+    color: rgb(250,250,250);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+    width: max-content;
+    height: max-content;
+    margin: 2% auto;
+    padding: 2px;
+    box-sizing: border-box;
+
+}
+
+.ubi{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 6px;
+    display: flex;
+}
+.ubi div{
+    width:50%;
+    height: 100%;
+    margin: auto;
+    padding: 6px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    justify-content: space-evenly;
+}
+.ubi iframe{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+.ubi h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(250,250,250, 0.6);
+    box-sizing: border-box;
+    width:100%;
+    height: max-content;
+    margin: 1%;
+    padding: 6px;
+    text-align: left;
+}
+.ubi p{
+    margin: 1%;
+    padding: 6px;
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+#ubicacion .redes{
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    padding: 1%;
+    box-sizing: border-box;
+    display: flex;
+}
+.redes .icono{
+    width: 20%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.redes .icono img{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ------------- Media Queries  ----------- */
+/* ------------ medidas para distintosdispositivos ----------- */
+@media (min-width:500px){
+    #cabeza{
+        width: 100vw;
+        height: 60vh;
+    }
+    #cabeza>div{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 0;
+        display: flex;
+        padding: 2%;
+        box-sizing: border-box;
+    }
+    #cabeza img{
+        width: 90%;
+        height: 80%;
+        margin: 0;
+        padding: 0;
+        border: 1px solid rgb(30,30,30, 0.5);
+        border-radius: 15px;
+    }
+}
+/* --------- barra de navegacion --------- */
+
+#cabeza .barra-nav{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 1% 2%;
+    justify-content:center;
+}
+
+.barra-nav>a{
+    width: 25%;
+    height: max-content;
+    text-decoration: none;
+    font-family:'Arial Narrow', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin: auto;
+    padding: 2px;
+    border: 2px solid rgb(245,245,245, 0.7);
+    border-radius: 50px;
+    color: rgb(250,250,250);
+    box-sizing: content-box;
+    text-align: center;
+}
+
+
+/* --------- Medida para dispositivos de 678px ---------- */
+
+    @media (min-width: 678px){
+        #cabeza{
+            width: 100vw;
+            height: 70vh;
+        }
+        #cabeza>div{
+            width: 70%;
+            height: 70%;
+            margin: auto;
+            margin-bottom: 0;
+            display: flex;
+            padding: 2%;
+            box-sizing: border-box;
+        }
+        #cabeza img{
+            width: 85%;
+            height: 90%;
+            margin: 0;
+            padding: 0;
+            border: 1px solid rgb(30,30,30, 0.5);
+            border-radius: 15px;
+        }
+        /* --------- barra de navegacion --------- */
+
+    #cabeza .barra-nav{
+        display: flex;
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding: 1% 2%;
+        justify-content:center;
+    }
+
+    .barra-nav>a{
+        width: 25%;
+        height: max-content;
+        text-decoration: none;
+        font-family:'Arial Narrow', sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        margin: auto;
+        padding: 2px;
+        border: 2px solid rgb(245,245,245, 0.7);
+        border-radius: 50px;
+        color: rgb(250,250,250);
+        box-sizing: content-box;
+        text-align: center;
+    }
+    /* ------ seccion acerca de ------ */
+    #info{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0 1px;
+    }
+    #info .acercade{
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 0 5% 0;
+        padding: 1%;
+    }
+    .acercade h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2em;
+        font-weight: bolder;
+        color: rgb(249,249,249, 0.9);
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    .acercade>p{
+        color: rgb(249,249,249, 0.9);
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.3em;
+        font-weight: bolder;
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding: 1%;
+        text-align: center;
+    }
+/* -------------- Fin de la seccion -------------- */
+
+/* -------------- Seccion servicios -------------- */
+#servicio{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin: 0;
+    background-image: linear-gradient(
+        0deg,
+        rgba(10,10,10, 0.5),
+        rgba(10,10,10, 0.5)
+    )
+    ,url(../img/carta-fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#servicio>h2{
+    color: rgb(250,250,250);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 3% auto;
+    padding: 6px;
+    width: max-content;
+}
+
+.carta{
+    width: 80%;
+    height: 40vh;
+    margin: 4% auto;
+    padding: 6px;
+    border-radius: 10px;
+    overflow:auto;
+    box-shadow: 2px -2px 3px 5px rgba(55, 55, 55, 0.5), -2px 2px 3px 5px rgba(55,55,55, 0.5);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    justify-items: left;
+}
+
+.carta h2{
+    width: max-content;
+    margin: 1% auto;
+    color: rgb(245,245,245);
+    font-family: 'Courier New', Courier, monospace sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 4% auto;
+    padding: 1%;
+}
+.carta ul{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.carta li{
+    color: rgb(245,245,245);
+    font-family: 'Courier New', Courier, monospace sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 2% auto;
+    padding: 1%;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* -------------- Seccion de contactar -------------- */
+
+#contactar{
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(50, 60, 90);
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#contactar .wave-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
+
+#contactar .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+}
+#contactar form{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#contactar article{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+#contactar h2{
+    color: rgb(250,250,250);
+    font-family:'Gill Sans', 'Calibri', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 2% auto;
+    padding: 2px;
+    width: max-content;
+    height: max-content;
+    text-align: center;
+}
+#contactar .contenedor-inp{
+    position: relative;
+}
+#contactar .contenedor-inp input{
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 0;
+    border: 2px solid #fff;
+    color: rgba(255,255,255);
+    text-align: center;
+}
+#contactar .contenedor-inp input::placeholder{
+    color: rgb(50,50,50, 0.7);
+}
+
+#contactar .text-area textarea{
+    width: 350px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 0;
+}
+.txt-area{
+    overflow: auto;
+    resize:none;
+}
+/* -------------- Seccion ubicacion -------------- */
+
+#ubicacion h3{
+    color: rgb(250,250,250);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.3em;
+    font-weight: bolder;
+    width: max-content;
+    height: max-content;
+    margin: 2% auto;
+    padding: 2px;
+    box-sizing: border-box;
+
+}
+
+.ubi{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 6px;
+    display: flex;
+}
+.ubi div{
+    width:50%;
+    height: 100%;
+    margin: auto;
+    padding: 6px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    justify-content: space-evenly;
+}
+.ubi iframe{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+.ubi h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(250,250,250, 0.6);
+    box-sizing: border-box;
+    width:100%;
+    height: max-content;
+    margin: 1%;
+    padding: 6px;
+    text-align: left;
+}
+.ubi p{
+    margin: 1%;
+    padding: 6px;
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+#ubicacion .redes{
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    padding: 1%;
+    box-sizing: border-box;
+    display: flex;
+}
+.redes .icono{
+    width: 20%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.redes .icono img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+}
+
+/* --------- Medida para dispositivos de 990px ---------- */
+
+@media (min-width: 999px){
+    #cabeza{
+        width: 100vw;
+        height: 90vh;
+    }
+    #cabeza>div{
+        width: 75%;
+        height: 70%;
+        margin: auto;
+        margin-bottom: 0;
+        display: flex;
+        padding: 2%;
+        box-sizing: border-box;
+    }
+    #cabeza img{
+        width: 80%;
+        height: 90%;
+        margin: 0;
+        padding: 0;
+        border: 2px solid rgb(30,30,30, 0.5);
+        border-radius: 15px;
+    }
+    #cabeza h1{
+        width: 100%;
+        height: auto;
+        font-size: 3em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        color: rgb(253,253,253);
+        text-align: left;
+        padding: 1%;
+        margin: 0;
+    }
+    /* --------- barra de navegacion --------- */
+
+    .barra-nav>a{
+        width: 25%;
+        height: max-content;
+        text-decoration: none;
+        font-family:'Arial Narrow', sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: auto;
+        padding: 2px;
+        border: 2px solid rgb(245,245,245, 0.7);
+        border-radius: 50px;
+        color: rgb(250,250,250);
+        box-sizing: content-box;
+        text-align: center;
+    }
+    /* ------ seccion acerca de ------ */
+    #info{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        padding: 0;
+    }
+    #info .acercade{
+        width: 75%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10% auto;
+        padding: 1%;
+    }
+    .acercade h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 3em;
+        font-weight: bold;
+        color: rgb(249,249,249, 0.9);
+        margin: 0 auto;
+        margin-bottom: 2%;
+        padding: 2%;
+    }
+    .acercade>p{
+        color: rgb(249,249,249, 0.9);
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 2em;
+        font-weight: bolder;
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding: 1%;
+        text-align: center;
+    }
+    /* -------------- Fin de la seccion -------------- */
+    /* -------------- Seccion de contactar -------------- */
+
+    #contactar{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(50, 60, 90);
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    }
+    #contactar .wave-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    }
+
+    #contactar .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    }
+    #contactar form{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    }
+
+    #contactar article{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    }
+    #contactar h2{
+    color: rgb(250,250,250);
+    font-family:'Gill Sans', 'Calibri', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 2% auto;
+    padding: 2px;
+    width: max-content;
+    height: max-content;
+    text-align: center;
+    }
+    #contactar .contenedor-inp{
+    position: relative;
+    }
+    #contactar .contenedor-inp input{
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 0;
+    border: 2px solid #fff;
+    color: rgba(255,255,255);
+    }
+    #contactar .contenedor-inp input::placeholder{
+    color: rgb(50,50,50, 0.7);
+    }
+
+    #contactar .text-area textarea{
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    }
+    .txt-area{
+    overflow: auto;
+    resize:none;
+    }
+
+    /* -------------- Seccion servicios -------------- */
+#servicio{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    padding: 5%;
+    margin: 0;
+    background-image: linear-gradient(
+        0deg,
+        rgba(10,10,10, 0.5),
+        rgba(10,10,10, 0.5)
+    )
+    ,url(../img/carta-fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#servicio>h2{
+    color: rgb(250,250,250);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 6%;
+    padding: 6px;
+    width: 100%;
+    text-align: center;
+}
+
+.carta{
+    width: 45%;
+    height: 50vh;
+    margin: 5% auto;
+    padding: 6px;
+    border-radius: 10px;
+    overflow:auto;
+    box-shadow: 2px -2px 3px 5px rgba(55, 55, 55, 0.5), -2px 2px 3px 5px rgb(55,55,55, 0.5);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    justify-items: left;
+}
+
+.carta h2{
+    width: max-content;
+    margin: 1% auto;
+    color: rgb(245,245,245);
+    font-family: 'Courier New', Courier, monospace sans-serif;
+    font-size: 1.7em;
+    font-weight: 500;
+    margin: 2% auto;
+    padding: 1%;
+}
+.carta ul{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.carta li{
+    color: rgb(245,245,245);
+    font-family: 'Courier New', Courier, monospace sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 2% auto;
+    padding: 1%;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* -------------- Fin de la seccion -------------- */
+
+/* -------------- Seccion ubicacion -------------- */
+#ubicacion{
+    width: 100vw;
+    height: 80vh;
+    margin: 0;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(33, 39, 59);
+    color: rgb(240,240,240);
+    position: static;
+    }
+
+    #ubicacion h3{
+    color: rgb(250,250,250);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+    font-weight: bolder;
+    width: max-content;
+    height: max-content;
+    margin: 2% auto;
+    padding: 2px;
+    box-sizing: border-box;
+
+    }
+
+    .ubi{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 6px;
+    display: flex;
+    }
+    .ubi div{
+    width:50%;
+    height: 100%;
+    margin: auto;
+    padding: 6px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    justify-content: space-evenly;
+    }
+    .ubi iframe{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+    }
+
+    .ubi h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(250,250,250, 0.6);
+    box-sizing: border-box;
+    width:100%;
+    height: max-content;
+    margin: 1%;
+    padding: 6px;
+    text-align: left;
+    }
+    .ubi p{
+    margin: 1%;
+    padding: 1%;
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    box-sizing: border-box;
+    }
+
+    #ubicacion .redes{
+    width: 100%;
+    height: 12vh;
+    margin: 0;
+    padding: 1%;
+    box-sizing: border-box;
+    display: flex;
+    }
+    .redes .icono{
+    width: 20%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    }
+    .redes .icono img{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+}
+
