@@ -440,6 +440,13 @@
     padding: 6px;
     text-align: left;
 }
+.ubi h4 img{
+    width: 10%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .ubi p{
     margin: 1%;
     padding: 6px;
@@ -1202,6 +1209,13 @@
     font-size: 1em;
     font-weight: 500;
     box-sizing: border-box;
+    }
+    .ubi h4 img{
+        width: 6%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
     #ubicacion .redes{
