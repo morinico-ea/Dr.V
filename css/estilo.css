@@ -336,7 +336,7 @@
 
 }
 #contactar h2{
-    color: rgb(250,250,250);
+    color: rgb(50,50,50);
     font-family:'Gill Sans', 'Calibri', sans-serif;
     font-size: 2em;
     font-weight: bold;
@@ -461,14 +461,14 @@
 }
 .redes .icono{
     width: 20%;
-    height: 100%;
+    height: 90%;
     margin: auto;
     padding: 10px;
     box-sizing: border-box;
 }
 .redes .icono img{
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     margin: auto;
     padding: 0;
     box-sizing: border-box;
